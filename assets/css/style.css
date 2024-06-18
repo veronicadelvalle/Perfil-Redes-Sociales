@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400, 600, 700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Primary*/
+  --green: hsl(75, 94%, 57%);
+
+  /*Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--grey);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--white);
+  font-weight: normal;
+  line-height: 1.4;
+}
+img {
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: var(--off-black);
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-box {
+  /* height: 600px; Debemos quitar el alto ya que el alto los definen sus hijos*/
+  width: 380px;
+  background-color: var(--dark-grey);
+  border-radius: 15px;
+  padding: 35px 40px 20px 40px;
+}
+
+.user-image {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name h2,
+.user-name h5,
+.social-media li a {
+  text-transform: capitalize;
+}
+
+.user-name h2 {
+  margin: 20px 0 5px 0;
+}
+.user-name h5 {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.skill p {
+  margin: 20px 0;
+  opacity: 0.8;
+}
+
+/* Creamos los botones de redes spciales */
+.social-media {
+  list-style-type: none;
+}
+
+.social-media li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  background-color: var(--grey);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: var(--white);
+  font-weight: 700;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* 
+    Transition:
+    Propiedad no nombrada se utiliza para modificar la transicion en el hover
+  */ 
+}
+
+.social-media li a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
