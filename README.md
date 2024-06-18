@@ -1,6 +1,6 @@
 # 🌟 Link de redes sociales 🍳
 
-![Link de Redes Sociales](./assets/image/design/destkop-design.jpg)
+![Link de Redes Sociales](./assets/images/design/destkop-design.jpg)
 
 Este proyecto está inspirado en un desafío de [Frontend Mentor](https://www.frontendmentor.io/) y se utiliza con fines didácticos.
 
